@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+<link rel="stylesheet" href="src/radar-chart.css">
+<head>
+  <script src="http://d3js.org/d3.v3.js"></script>
+  <script src="src/radar-chart.js"></script>
+</head>
+<body>
+<textarea id="data" cols="60" rows="15"></textarea>
+<p>
+Width: <input type="number" name="w" id="w" class="form-control" value="600" min="200" max="2000" step="" required="required" title="">
+Height: <input type="number" name="h" id="h" class="form-control" value="600" min="200" max="2000" step="" required="required" title="">
+</p>
+<p>
+<button onclick='showRadar()' class="btn btn-default" style="width:200px;height:50px;">Draw!</button>
+</p>
+
+<div id="chart-container"></div>
+<script src="src/jquery-2.1.3.min.js"></script>
+<script src="pearson.js"></script>
+</body>
+</html>
